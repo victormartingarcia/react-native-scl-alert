@@ -151,7 +151,7 @@ const styles = StyleSheet.create({
   },
   innerContent: {
     padding: variables.gutter,
-    paddingTop: variables.gutter * 4,
+    paddingTop: variables.gutter * 2,
     borderRadius: variables.baseBorderRadius,
     backgroundColor: variables.baseBackgroundColor,
     width: variables.contentWidth

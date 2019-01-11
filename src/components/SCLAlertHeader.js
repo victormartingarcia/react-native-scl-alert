@@ -25,7 +25,7 @@ function SCLAlertHeader(props) {
       <View
         style={[
           styles.inner,
-          styles.headerInnerStyles,
+          props.headerInnerStyles,
           { backgroundColor: variables[`${props.theme}Background`] }
         ]}
       >
