@@ -114,16 +114,14 @@ class SCLAlert extends React.Component {
           <TouchableWithoutFeedback onPress={this.handleOnClose}>
             <View style={[styles.overlay, this.props.overlayStyle]} />
           </TouchableWithoutFeedback>
-          <Animated.View
-            style={[styles.contentContainer, { transform: this.interpolationTranslate }]}
-          >
+          <View style={styles.contentContainer}>
             <SCLAlertHeader {...this.props} />
             <View style={styles.innerContent}>
               <SCLAlertTitle {...this.props} />
               <SCLAlertSubtitle {...this.props} />
               <View style={styles.bodyContainer}>{this.props.children}</View>
             </View>
-          </Animated.View>
+          </View>
         </View>
       </Modal>
     )
@@ -133,7 +131,7 @@ class SCLAlert extends React.Component {
 const styles = StyleSheet.create({
   inner: {
     ...StyleSheet.absoluteFillObject,
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
     padding: variables.containerPadding
   },
   overlay: {
