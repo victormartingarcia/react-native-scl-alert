@@ -184,7 +184,6 @@ class SCLAlert extends React.Component {
               <View style={[styles.overlay, this.props.overlayStyle]} />
             </TouchableWithoutFeedback>
             <View style={styles.contentContainer}>
-              <SCLAlertHeader {...this.props} />
               <View style={styles.innerContent}>
                 <SCLAlertTitle {...this.props} />
                 <SCLAlertSubtitle {...this.props} />
@@ -219,7 +218,7 @@ const styles = StyleSheet.create({
   },
   innerContent: {
     padding: variables.gutter,
-    paddingTop: variables.gutter * 2,
+    paddingTop: 0,
     borderRadius: variables.baseBorderRadius,
     backgroundColor: variables.baseBackgroundColor,
     width: variables.contentWidth
